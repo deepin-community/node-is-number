@@ -1,0 +1,64 @@
+node-is-number (7.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix debian/watch
+
+ -- Yadd <yadd@debian.org>  Fri, 29 Oct 2021 18:23:50 +0200
+
+node-is-number (7.0.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.2.1, no changes needed.
+  * Remove constraints unnecessary since stretch:
+    + Build-Depends: Drop versioned constraint on node-kind-of.
+    + node-is-number: Drop versioned constraint on node-kind-of in Depends.
+  * Bump debhelper from old 12 to 13.
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs auto test & install
+
+ -- Yadd <yadd@debian.org>  Sun, 10 Oct 2021 15:44:22 +0200
+
+node-is-number (7.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream releases (Closes: #906649).
+  * Refresh packaging:
+    - Point d/watch to /releases instead of /tags.
+    - Point Vcs-* fields to salsa.
+    - Make the override_dh_auto_test target check build options.
+    - Bump dh compat to 11.
+    - Bump std-ver to 4.2.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 21 Aug 2018 09:55:03 +0200
+
+node-is-number (4.0.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update packaging:
+    - Push dh compat to 10
+    - Push std-ver to 4.1.1
+    - Push d/watch to version 4
+    - Use https in d/copyright's Format
+    - Clean up d/rules
+    - Made sure autopkgtest runs the installed code
+    - Move to section javascript
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 24 Nov 2017 22:14:44 +0100
+
+node-is-number (3.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #840946)
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 16 Oct 2016 17:58:17 +0530

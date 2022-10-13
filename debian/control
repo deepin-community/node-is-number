@@ -1,0 +1,25 @@
+Source: node-is-number
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , mocha
+ , node-kind-of
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-is-number
+Vcs-Git: https://salsa.debian.org/js-team/node-is-number.git
+Homepage: https://github.com/jonschlinkert/is-number
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-is-number
+Architecture: all
+Depends: ${misc:Depends}
+ , node-kind-of
+ , nodejs
+Description: returns true if the value is a number
+ It has comprehensive tests.
+ .
+ Node.js is an event-based server-side JavaScript engine.
