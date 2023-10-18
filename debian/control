@@ -18,7 +18,7 @@ Package: node-is-number
 Architecture: all
 Depends: ${misc:Depends}
  , node-kind-of
- , nodejs
+ , nodejs:any
 Description: returns true if the value is a number
  It has comprehensive tests.
  .
